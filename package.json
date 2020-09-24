@@ -1,0 +1,23 @@
+{
+  "name": "cakebase",
+  "version": "1.0.0",
+  "description": "A light JSON database for node, powerful.",
+  "keywords": [
+    "local",
+    "database",
+    "JSON",
+    "storage",
+    "localStorage",
+    "Node"
+  ],
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "scripts": {
+    "test": "nodemon ./.test/test.js"
+  },
+  "author": "",
+  "license": "MIT"
+}
