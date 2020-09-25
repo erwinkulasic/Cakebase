@@ -1,5 +1,10 @@
 'use strict';
 
+/*
+*   Cakebase, 2020
+*   Author: Erwin Kulasic
+*/
+
 const fs = require('fs');
 
 function read(path)
@@ -9,7 +14,7 @@ function read(path)
 
 function write(path, data)
 {
-    fs.writeFileSync(path, data, { encoding: 'utf-8' })
+    fs.writeFileSync(path, data, { encoding: 'utf-8' });
 }
 
 function isObject(data)
@@ -19,21 +24,21 @@ function isObject(data)
     return false;
 }
 
-module.exports = (path) => {
+module.exports = path => {
     var Obj = JSON.parse(read(path));
 
     return {
-        set: (data) => {
+        set: data => {
             if(isObject(data))
             {
                 Obj.push(data);
                 write(path, JSON.stringify(Obj));
             }
         },
-        get: (predicate) => {
+        get: predicate => {
             return Obj.filter(predicate);
         },
-        remove: (data) => {
+        remove: data => {
             if(isObject(data))
             {
                 Obj = Obj.filter(e => !data.includes(e));
