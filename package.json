@@ -19,6 +19,9 @@
 		"test": "nodemon ./.test/test.js"
 	},
 	"author": "Erwin Kulasic",
+	"bugs": {
+		"url": "https://github.com/erwinkulasic/Cakebase/issues"
+	},
 	"homepage": "https://github.com/erwinkulasic/Cakebase",
 	"repository": {
 		"type": "git",
