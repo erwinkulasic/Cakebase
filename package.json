@@ -16,7 +16,8 @@
 		"nodemon": "^2.0.4"
 	},
 	"scripts": {
-		"test": "nodemon ./.test/test.js"
+		"run:test": "nodemon ./.test/test.js",
+		"travis:test": "node ."
 	},
 	"author": "Erwin Kulasic",
 	"bugs": {
