@@ -8,10 +8,14 @@ Cakebase is a lightweight json database for node, powerful.
 
 ## Installation
 
-Use the [npm](https://www.npmjs.com/) to install cakebase.
+Use [npm](https://www.npmjs.com/) or [yarn](https://classic.yarnpkg.com/en/) to install cakebase.
 
 ```bash
 npm i cakebase
+```
+
+```bash
+yarn add cakebase
 ```
 
 ## Usage
