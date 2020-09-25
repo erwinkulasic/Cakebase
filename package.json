@@ -25,12 +25,10 @@
 		"url": "https://github.com/erwinkulasic/Cakebase/issues"
 	},
 	"homepage": "https://github.com/erwinkulasic/Cakebase",
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/erwinkulasic/Cakebase.git"
-	},
+	"repository": "git://github.com/erwinkulasic/Cakebase.git",
 	"license": "MIT",
 	"engines": {
 		"node": ">=6"
-	}
+	},
+	"private": false
 }
