@@ -1,4 +1,4 @@
-# Cakebase
+![GitHub Logo](/docs/assets/Cakebase-400.png)
 
 [![Build Status](https://travis-ci.com/erwinkulasic/Cakebase.svg?branch=master)](https://travis-ci.com/erwinkulasic/Cakebase)
 ![npm](https://img.shields.io/npm/dw/cakebase?color=success)
