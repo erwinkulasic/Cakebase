@@ -8,7 +8,7 @@
 		"JSON",
 		"storage",
 		"localStorage",
-		"Node",
+		"node",
 		"nodejs"
 	],
 	"main": "index.js",
