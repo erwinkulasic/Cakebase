@@ -1,6 +1,6 @@
 {
 	"name": "cakebase",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "Cakebase is a lightweight json database for node, powerful.",
 	"keywords": [
 		"local",
@@ -31,5 +31,7 @@
 		"node": ">=6"
 	},
 	"private": false,
-	"publishConfig": { "registry": "https://npm.pkg.github.com/" }
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com/"
+	}
 }
