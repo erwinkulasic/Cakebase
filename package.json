@@ -30,8 +30,5 @@
 	"engines": {
 		"node": ">=6"
 	},
-	"private": false,
-	"publishConfig": {
-		"registry": "https://npm.pkg.github.com/"
-	}
+	"private": false
 }
