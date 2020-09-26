@@ -2,6 +2,10 @@
 
 [![Build Status](https://travis-ci.com/erwinkulasic/Cakebase.svg?branch=master)](https://travis-ci.com/erwinkulasic/Cakebase)
 ![npm](https://img.shields.io/npm/dw/cakebase?color=success)
+![GitHub issues](https://img.shields.io/github/issues/erwinkulasic/cakebase)
+![GitHub](https://img.shields.io/github/license/erwinkulasic/cakebase?color=success)
+![Discord](https://img.shields.io/discord/759458665060761610)
+
 
 Cakebase is a lightweight json database for node, powerful.
 
