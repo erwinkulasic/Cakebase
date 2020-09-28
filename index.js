@@ -6,6 +6,7 @@
 */
 
 const fs = require('fs');
+const util = require('util');
 
 function read(path)
 {
@@ -46,12 +47,16 @@ module.exports = path => {
             }
         },
         update: (predicate, data) => {
-            if(isObject(data))
-            {
-                var index = Obj.findIndex(predicate);
-                Object.assign(Obj[index], data);
+            var rows = Obj.filter(predicate);
+            rows.forEach((r, i) => {
+                Obj.forEach((o, i2) => {
+                    if(util.isDeepStrictEqual(o, r))
+                    {
+                        Obj[i2] = Object.assign(rows[i], data);
+                    }
+                })
                 write(path, JSON.stringify(Obj));
-            }
+            });
         },
         getAll: () => {
             return Obj;
