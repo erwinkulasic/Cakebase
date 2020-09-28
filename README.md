@@ -37,7 +37,7 @@ const rows = Cakebase.get(e => e.email === "...");
 //Remove rows
 Cakebase.remove(rows);
 
-//Update a row
+//Update rows
 Cakebase.update(e => e.id === "e1fe3...", { email: "..." });
 
 //Get all rows
