@@ -1,0 +1,7 @@
+.test
+node_modules
+.github
+.trvis.yml
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+docs
