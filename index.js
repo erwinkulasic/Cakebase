@@ -8,61 +8,45 @@
 const fs = require('fs');
 const util = require('util');
 
-function read(path)
-{
-    return fs.readFileSync(path, { encoding: 'utf-8' });
+function read(path) {
+    return JSON.parse(fs.readFileSync(path, { encoding: 'utf-8' }));
 }
 
-function write(path, data)
-{
-    fs.writeFileSync(path, data, { encoding: 'utf-8' });
-}
-
-function isObject(data)
-{
-    if(data !== undefined || typeof data === 'object')
-        return true;
-    return false;
+function write(path, data) {
+    fs.writeFileSync(path, JSON.stringify(data), { encoding: 'utf-8' });
 }
 
 module.exports = path => {
-    var Obj = JSON.parse(read(path));
+    var base = read(path);
 
     return {
         set: data => {
-            if(isObject(data))
-            {
-                Obj.push(data);
-                write(path, JSON.stringify(Obj));
-            }
+            base.push(data);
+            write(path, base);
         },
         get: predicate => {
-            return Obj.filter(predicate);
+            return base.filter(predicate);
         },
         remove: data => {
-            if(isObject(data))
-            {
-                Obj = Obj.filter(e => !data.includes(e));
-                write(path, JSON.stringify(Obj));
-            }
+            base = base.filter(e => !data.includes(e));
+            write(path, base);
         },
         update: (predicate, data) => {
-            var rows = Obj.filter(predicate);
-            rows.forEach((r, i) => {
-                Obj.forEach((o, i2) => {
-                    if(util.isDeepStrictEqual(o, r))
-                    {
-                        Obj[i2] = Object.assign(rows[i], data);
+            var rows = base.filter(predicate);
+            for (var i = 0; i < rows.length; i++) {
+                for (var j = 0; j < base.length; j++) {
+                    if (util.isDeepStrictEqual(base[j], rows[i])) {
+                        base[j] = Object.assign(rows[i], data);
                     }
-                })
-                write(path, JSON.stringify(Obj));
-            });
+                }
+                write(path, base);
+            }
         },
         getAll: () => {
-            return Obj;
+            return base;
         },
         clear: () => {
-            write(path, JSON.stringify([]));
+            write(path, []);
         }
     }
 };
