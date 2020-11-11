@@ -1,6 +1,6 @@
 {
 	"name": "cakebase",
-	"version": "1.0.7",
+	"version": "1.0.8",
 	"description": "Cakebase is a lightweight json database for node, powerful.",
 	"keywords": [
 		"local",

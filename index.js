@@ -9,7 +9,8 @@ const fs = require('fs');
 const util = require('util');
 
 function read(path) {
-    return JSON.parse(fs.readFileSync(path, { encoding: 'utf-8' }));
+    const response = fs.readFileSync(path, { encoding: 'utf-8' });
+    return response.length ? JSON.parse(response) : [];
 }
 
 function write(path, data) {
@@ -46,6 +47,7 @@ module.exports = path => {
             return base;
         },
         clear: () => {
+            base = [];
             write(path, []);
         }
     }
