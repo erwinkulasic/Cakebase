@@ -47,6 +47,38 @@ const rows = Cakebase.getAll();
 Cakebase.clear();
 ```
 
+## Asynchronous Usage
+
+You have two ways to use them asynchronously.
+
+```javascript
+//I recommend to use the async/await way.
+(async () => {
+    //inital
+    const Cakebase = await require('cakebase').Async("./database.json");
+
+    //Create a new row
+    await Cakebase.set({ id: 0, email: "..." });
+
+    //Get rows
+    const rows = await Cakebase.get(e => e.email === "...");
+
+    //...
+})();
+
+//The Promise way
+require('cakebase').Async("./database.json").then(Cakebase => {
+    //Create a new row
+    Cakebase.set({ id: 0, email: "..." }).then(() => {
+
+        //Get rows
+        Cakebase.get(e => e.email === "...").then(console.log);
+    });
+
+    //...
+});
+```
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
