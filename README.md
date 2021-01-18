@@ -9,6 +9,9 @@
 
 Cakebase is a lightweight json database for node, powerful.
 
+WARNING:
+
+In the next update the synchronous function will be removed and the current version will be deprecated.
 
 ## Installation
 
