@@ -8,7 +8,7 @@ module.exports = {
         try {
             resolve(await cb());
         } catch (err) {
-            reject(err);
+            console.error(err);
         }
     })
 };
