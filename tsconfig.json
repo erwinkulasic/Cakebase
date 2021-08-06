@@ -6,6 +6,6 @@
         "allowJs": true,
         "declaration": true,
         "emitDeclarationOnly": true,
-        "outDir": "@types/cakebase/",
-    },
+        "outDir": "@types/cakebase/"
+    }
 }

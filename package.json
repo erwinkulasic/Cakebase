@@ -28,7 +28,8 @@
 	"scripts": {
 		"test2": "node ./.test/test.js",
 		"test": "nodemon ./.test/test.js",
-		"start": "node ."
+		"start": "node .",
+		"build:types": "tsc -d"
 	},
 	"author": "Erwin Kulasic",
 	"bugs": {
