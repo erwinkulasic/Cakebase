@@ -2,14 +2,13 @@
 
 /*
 *
-*   Cakebase, 2020
+*   Cakebase, 2021
 *   Author: Erwin Kulasic
 *   This project is under the MIT License.
-*
+*   
 */
 
 const Cakebase = require('./src/Cake');
 
 module.exports = Cakebase;
 
-module.exports.Async = Cakebase.Async;

@@ -9,9 +9,6 @@
 
 Cakebase is a lightweight json database for node, powerful.
 
-WARNING:
-
-In the next update the synchronous function will be removed and the current version will be deprecated.
 
 ## Installation
 
@@ -26,31 +23,6 @@ yarn add cakebase
 ```
 
 ## Usage
-
-```javascript
-//inital
-const Cakebase = require('cakebase')("./database.json");
-
-//Create a new row
-Cakebase.set({ id: 0, email: "..." });
-
-//Get rows
-const rows = Cakebase.get(e => e.email === "...");
-
-//Remove rows
-Cakebase.remove(rows);
-
-//Update rows
-Cakebase.update(e => e.id === "e1fe3...", { email: "..." });
-
-//Get all rows
-const rows = Cakebase.getAll();
-
-//Clear the whole database
-Cakebase.clear();
-```
-
-## Asynchronous Usage
 
 You have two ways to use them asynchronously.
 
