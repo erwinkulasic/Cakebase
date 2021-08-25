@@ -42,7 +42,7 @@ You have two ways to use them asynchronously.
 })();
 
 //The Promise way
-require('cakebase').Async("./database.json").then(Cakebase => {
+require('cakebase')("./database.json").then(Cakebase => {
     //Create a new row
     Cakebase.set({ id: 0, email: "..." }).then(() => {
 
