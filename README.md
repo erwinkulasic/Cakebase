@@ -30,7 +30,7 @@ You have two ways to use them asynchronously.
 //I recommend to use the async/await way.
 (async () => {
     //inital
-    const Cakebase = await require('cakebase').Async("./database.json");
+    const Cakebase = await require('cakebase')("./database.json");
 
     //Create a new row
     await Cakebase.set({ id: 0, email: "..." });
