@@ -9,7 +9,7 @@
 ![Discord](https://img.shields.io/discord/759458665060761610?color=9870B8&style=flat-square)
 </p>
 
-Cakebase is a lightweight json database for node, powerful.
+Cakebase is a lightweight json database for node.js
 
 
 ## Installation
