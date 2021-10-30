@@ -1,10 +1,10 @@
 <img src="https://raw.githubusercontent.com/erwinkulasic/Cakebase/master/docs/assets/Cakebase-400.png" width="400px"/>
 
-![Travis (.org)](https://img.shields.io/travis/erwinkulasic/cakebase?color=violet)
-![npm](https://img.shields.io/npm/dw/cakebase?color=violet)
-![GitHub issues](https://img.shields.io/github/issues/erwinkulasic/cakebase?color=violet)
-![GitHub](https://img.shields.io/github/license/erwinkulasic/cakebase?color=violet)
-![Discord](https://img.shields.io/discord/759458665060761610?color=violet)
+![Travis (.org)](https://img.shields.io/travis/erwinkulasic/cakebase?color=9870B8)
+![npm](https://img.shields.io/npm/dw/cakebase?color=9870B8)
+![GitHub issues](https://img.shields.io/github/issues/erwinkulasic/cakebase?color=9870B8)
+![GitHub](https://img.shields.io/github/license/erwinkulasic/cakebase?color=9870B8)
+![Discord](https://img.shields.io/discord/759458665060761610?color=9870B8)
 
 
 Cakebase is a lightweight json database for node, powerful.
