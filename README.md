@@ -26,8 +26,6 @@ yarn add cakebase
 
 ## Usage
 
-You have two ways to use them asynchronously.
-
 ```javascript
 //I recommend to use the async/await way.
 (async () => {
@@ -42,18 +40,6 @@ You have two ways to use them asynchronously.
 
     //...
 })();
-
-//The Promise way
-require('cakebase')("./database.json").then(Cakebase => {
-    //Create a new row
-    Cakebase.set({ id: 0, email: "..." }).then(() => {
-
-        //Get rows
-        Cakebase.get(e => e.email === "...").then(console.log);
-    });
-
-    //...
-});
 ```
 
 ## Contributing
