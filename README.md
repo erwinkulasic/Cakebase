@@ -1,11 +1,13 @@
-<img src="https://raw.githubusercontent.com/erwinkulasic/Cakebase/master/docs/assets/Cakebase-400.png" width="400px"/>
+<p align="center">
+<img src="https://raw.githubusercontent.com/erwinkulasic/Cakebase/master/docs/assets/Cakebase-header.png" width="800px"/>
 
-![Travis (.org)](https://img.shields.io/travis/erwinkulasic/cakebase?color=9870B8)
-![npm](https://img.shields.io/npm/dw/cakebase?color=9870B8)
-![GitHub issues](https://img.shields.io/github/issues/erwinkulasic/cakebase?color=9870B8)
-![GitHub](https://img.shields.io/github/license/erwinkulasic/cakebase?color=9870B8)
-![Discord](https://img.shields.io/discord/759458665060761610?color=9870B8)
 
+![Travis (.org)](https://img.shields.io/travis/erwinkulasic/cakebase?color=9870B8&style=flat-square)
+![npm](https://img.shields.io/npm/dw/cakebase?color=9870B8&style=flat-square)
+![GitHub issues](https://img.shields.io/github/issues/erwinkulasic/cakebase?color=9870B8&style=flat-square)
+![GitHub](https://img.shields.io/github/license/erwinkulasic/cakebase?color=9870B8&style=flat-square)
+![Discord](https://img.shields.io/discord/759458665060761610?color=9870B8&style=flat-square)
+</p>
 
 Cakebase is a lightweight json database for node, powerful.
 
