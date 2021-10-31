@@ -6,7 +6,6 @@
 ![npm](https://img.shields.io/npm/dw/cakebase?color=9870B8&style=flat-square)
 ![GitHub issues](https://img.shields.io/github/issues/erwinkulasic/cakebase?color=9870B8&style=flat-square)
 ![GitHub](https://img.shields.io/github/license/erwinkulasic/cakebase?color=9870B8&style=flat-square)
-![Discord](https://img.shields.io/discord/759458665060761610?color=9870B8&style=flat-square)
 </p>
 
 Cakebase is a lightweight json database for node.js
