@@ -10,6 +10,9 @@
 
 Cakebase is a lightweight json database for node.js
 
+**Cakebase has over 1.2 K downloads! I say thank you, there are some changes planned for the future, and therefore I need your suggestions, create an issue now.
+Have a nice day.**
+
 
 ## Installation
 
