@@ -10,7 +10,7 @@
 
 Cakebase is a lightweight json database for node.js
 
-**Cakebase has over 1.2 K downloads! I say thank you, there are some changes planned for the future, and therefore I need your suggestions, create an issue now.
+**Cakebase has over 1.3 K downloads! I say thank you, there are some changes planned for the future, and therefore I need your suggestions, create an issue now.
 Have a nice day.**
 
 
@@ -22,26 +22,29 @@ Use [npm](https://www.npmjs.com/) or [yarn](https://classic.yarnpkg.com/en/) to 
 npm i cakebase
 ```
 
-```bash
-yarn add cakebase
-```
-
 ## Usage
 
 ```javascript
 //I recommend to use the async/await way.
-(async () => {
-    //inital
-    const Cakebase = await require('cakebase')("./database.json");
+const Cakebase = require('cakebase')("./database.json");
 
-    //Create a new row
+async function Something()
+{
+    //Add a row.
     await Cakebase.set({ id: 0, email: "..." });
 
-    //Get rows
+    //Get rows that match the prediction
     const rows = await Cakebase.get(e => e.email === "...");
 
-    //...
-})();
+    //Delete rows that match the prediction.
+    await Cakebase.remove(e => e.surname === "Doe");
+
+    //Update rows that match the prediction.
+    await Cakebase.update(e => e.email === "...", { username: "John" });
+
+    //Delete all rows in the json file.
+    await Cakebase.clear();
+}
 ```
 
 ## Contributing
