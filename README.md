@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://raw.githubusercontent.com/erwinkulasic/Cakebase/master/docs/assets/Cakebase-header.png" width="800px"/>
+<img src="https://raw.githubusercontent.com/erwinkulasic/Cakebase/master/docs/assets/cakebase.jpg" width="800px"/>
 
 
 ![Travis (.org)](https://img.shields.io/travis/erwinkulasic/cakebase?color=9870B8&style=flat-square)
