@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://raw.githubusercontent.com/erwinkulasic/Cakebase/master/docs/assets/cakebase.jpg" width="800px"/>
+<img src="https://raw.githubusercontent.com/erwinkulasic/Cakebase/master/docs/assets/cakebase-header.jpg" width="800px"/>
 
 
  <br>
@@ -10,9 +10,7 @@
 ![GitHub](https://img.shields.io/github/license/erwinkulasic/cakebase?color=9870B8&style=flat-square)
 </p>
 
-**Cakebase is a lightweight JSON database for nodejs, the goal of this project is to use a JSON file like a database. Since the new update some things have changed for example: require is no longer executed asynchronously or to save memory the array is no longer stored locally.**
-
-**Cakebase has over 1.3 K downloads! I say thank you, there are some changes planned for the future, and therefore I need your suggestions, create an issue now.
+**Cakebase has over 1.8 K downloads! I say thank you, there are some changes planned for the future, and therefore I need your suggestions, create an issue now.
 Have a nice day.**
 
 
