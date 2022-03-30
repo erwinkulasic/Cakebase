@@ -45,7 +45,7 @@ async function DeleteData() { // Delete all data
 
     console.time("DeleteData"); // Start the timer
 
-    await cakebase.delete(e => e.hello === 'world'); // Delete all data
+    await cakebase.remove(e => e.hello === 'world'); // Delete all data
 
     console.timeEnd("DeleteData"); // End the timer
 
