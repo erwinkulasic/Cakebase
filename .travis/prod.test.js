@@ -4,7 +4,7 @@ async function GenerateData() {
 
     console.time("GenerateData"); // Start the timer
 
-    for (let i = 0; i < 10000; i++) // Generate 10,000 random data
+    for (let i = 0; i < 100; i++) // Generate 10,000 random data
         await cakebase.set({ index: i, hello: 'world' }); // Set the data
 
     console.timeEnd("GenerateData"); // End the timer
@@ -16,7 +16,7 @@ async function ReadData() {
 
     console.time("ReadData"); // Start the timer
 
-    for (let i = 0; i < 10000; i++) { // Read 10,000 random data
+    for (let i = 0; i < 100; i++) { // Read 10,000 random data
 
         let data = cakebase.get(e => e.index === i); // Get the data
 
@@ -32,7 +32,7 @@ async function UpdateData() {
 
     console.time("UpdateData"); // Start the timer
 
-    for (let i = 0; i < 10000; i++) { // Update 10,000 random data
+    for (let i = 0; i < 100; i++) { // Update 10,000 random data
         await cakebase.update(e => e.index === i, { email: "hello@some.com" }); // Update the data
     }
 
