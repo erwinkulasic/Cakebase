@@ -18,7 +18,7 @@ async function ReadData() {
 
     for (let i = 0; i < 100; i++) { // Read 10,000 random data
 
-        let data = cakebase.get(e => e.index === i); // Get the data
+        let data = await cakebase.get(e => e.index === i); // Get the data
 
         console.log(data); // Log the data
     }
