@@ -1,4 +1,4 @@
-const cakebase = require('../src/index.js')('../src/data.json');
+const cakebase = require('../src/index.js')('./src/data.json');
 
 async function GenerateData() {
 
