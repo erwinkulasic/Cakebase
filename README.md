@@ -6,10 +6,10 @@
 
 <p align="center">
 
-![Travis (.org)](https://img.shields.io/travis/erwinkulasic/cakebase?color=9870B8&style=flat-square)
-![npm](https://img.shields.io/npm/dw/cakebase?color=9870B8&style=flat-square)
-![GitHub issues](https://img.shields.io/github/issues/erwinkulasic/cakebase?color=9870B8&style=flat-square)
-![GitHub](https://img.shields.io/github/license/erwinkulasic/cakebase?color=9870B8&style=flat-square)
+<img alt="TRAVIS" src="https://img.shields.io/travis/erwinkulasic/cakebase?color=9870B8&style=flat-square">
+<img alt="NPM" src="https://img.shields.io/npm/dw/cakebase?color=9870B8&style=flat-square">
+<img alt="GitHub issues" src="https://img.shields.io/github/issues/erwinkulasic/cakebase?color=9870B8&style=flat-square">
+<img alt="NPM" src="https://img.shields.io/github/license/erwinkulasic/cakebase?color=9870B8&style=flat-square">
 
 </p>
 
@@ -95,5 +95,6 @@ await users.clear();
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 <br>
+
 ### **License**
 [MIT](https://github.com/erwinkulasic/Cakebase/blob/master/LICENSE)
