@@ -1,20 +1,25 @@
 <p align="center">
-<img src="https://raw.githubusercontent.com/erwinkulasic/Cakebase/master/docs/assets/cakebase-header.jpg" width="800px"/>
+    <img src="https://raw.githubusercontent.com/erwinkulasic/Cakebase/master/docs/assets/cakebase-header.jpg" width="800px"/>
+</p>
 
+<br>
 
- <br>
-    
+<p align="center">
+
 ![Travis (.org)](https://img.shields.io/travis/erwinkulasic/cakebase?color=9870B8&style=flat-square)
 ![npm](https://img.shields.io/npm/dw/cakebase?color=9870B8&style=flat-square)
 ![GitHub issues](https://img.shields.io/github/issues/erwinkulasic/cakebase?color=9870B8&style=flat-square)
 ![GitHub](https://img.shields.io/github/license/erwinkulasic/cakebase?color=9870B8&style=flat-square)
+
 </p>
 
-**Cakebase has over 1.8 K downloads! I say thank you, there are some changes planned for the future, and therefore I need your suggestions, create an issue now.
-Have a nice day.**
+<br>
 
 
-## Installation
+
+### **Getting started**
+
+<br>
 
 Use [npm](https://www.npmjs.com/) or [yarn](https://classic.yarnpkg.com/en/) to install cakebase.
 
@@ -22,29 +27,59 @@ Use [npm](https://www.npmjs.com/) or [yarn](https://classic.yarnpkg.com/en/) to 
 npm i cakebase
 ```
 
-## Usage
+After the installation you can create a json file and start immediately.
+
+<br>
+
+### **Usage**
+
+
+
+Now you can import cakebase there are two ways to do this.
+
+<br>
 
 ```javascript
-//I recommend to use the async/await way.
-const Cakebase = require('cakebase')("./database.json");
+const users = require('cakebase')("./Users.json");
+```
+<br>
 
-async function Something()
-{
-    //Add a row.
-    await Cakebase.set({ id: 0, email: "..." });
+```javascript
+const table = require('cakebase');
 
-    //Get rows that match the prediction
-    const rows = await Cakebase.get(e => e.email === "...");
+const users = table("./users.json");
+const log = table("./log.json");
+```
 
-    //Delete rows that match the prediction.
-    await Cakebase.remove(e => e.surname === "Doe");
+<br>
 
-    //Update rows that match the prediction.
-    await Cakebase.update(e => e.email === "...", { username: "John" });
+**Add an object to json file.**
 
-    //Delete all rows in the json file.
-    await Cakebase.clear();
-}
+```javascript
+await users.set({ id: 0, username: "John", email: "test@something.com" });
+```
+
+<br>
+
+**Retrieve objects from json file**
+
+```javascript
+const user = await users.get(obj => obj.username === "John");
+```
+
+<br>
+
+**update objects in json file**
+
+```javascript
+await users.update(obj => obj.username === "John", { location: "Mars" });
+```
+<br>
+
+**remove objects in json file**
+
+```javascript
+await users.remove(obj => obj.location === "earth");
 ```
 
 ## Contributing
