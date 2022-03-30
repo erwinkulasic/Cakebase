@@ -1,7 +1,7 @@
 {
 	"name": "cakebase",
-	"version": "3.0.1",
-	"description": "Cakebase is a lightweight json database for nodejs.",
+	"version": "4.0.2",
+	"description": "Cakebase is a asynchronos fast lightweight json database for nodejs.",
 	"keywords": [
 		"local",
 		"database",
@@ -19,14 +19,9 @@
 		"nosql-database",
 		"json-database"
 	],
-	"main": "index.js",
-	"dependencies": {},
-	"devDependencies": {
-		"@types/node": "^16.11.11"
-	},
+	"main": "./src/index.js",
 	"scripts": {
-		"test": "node ./.test/test.js",
-		"start": "node ."
+		"travis.test": "nodemon ./.travis/prod.test.js"
 	},
 	"author": "erwinkulasic",
 	"bugs": {
@@ -39,5 +34,5 @@
 		"node": ">=6"
 	},
 	"private": false,
-	"types": "./index.d.ts"
+	"types": "./src/types/index.d.ts"
 }
