@@ -19,7 +19,6 @@
 
 ### **Getting started**
 
-<br>
 
 Use [npm](https://www.npmjs.com/) or [yarn](https://classic.yarnpkg.com/en/) to install cakebase.
 
@@ -40,7 +39,7 @@ Now you can import cakebase there are two ways to do this.
 <br>
 
 ```javascript
-const users = require('cakebase')("./Users.json");
+const users = require('cakebase')("./users.json");
 ```
 <br>
 
@@ -53,7 +52,7 @@ const log = table("./log.json");
 
 <br>
 
-**Add an object to json file.**
+Add an object to json file.
 
 ```javascript
 await users.set({ id: 0, username: "John", email: "test@something.com" });
@@ -61,7 +60,7 @@ await users.set({ id: 0, username: "John", email: "test@something.com" });
 
 <br>
 
-**Retrieve objects from json file**
+Retrieve objects from json file
 
 ```javascript
 const user = await users.get(obj => obj.username === "John");
@@ -69,22 +68,32 @@ const user = await users.get(obj => obj.username === "John");
 
 <br>
 
-**update objects in json file**
+update objects in json file
 
 ```javascript
 await users.update(obj => obj.username === "John", { location: "Mars" });
 ```
 <br>
 
-**remove objects in json file**
+remove objects in json file
 
 ```javascript
 await users.remove(obj => obj.location === "earth");
 ```
 
-## Contributing
+<br>
+
+clear all objects in json file
+
+```javascript
+await users.clear();
+```
+
+<br>
+
+### **Contributing**
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-
-## License
+<br>
+### **License**
 [MIT](https://github.com/erwinkulasic/Cakebase/blob/master/LICENSE)
