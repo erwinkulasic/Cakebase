@@ -21,7 +21,7 @@
 	],
 	"main": "./src/index.js",
 	"scripts": {
-		"travis.test": "nodemon ./.travis/prod.test.js"
+		"travis.test": "node ./.travis/prod.test.js"
 	},
 	"author": "erwinkulasic",
 	"bugs": {
