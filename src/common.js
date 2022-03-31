@@ -42,5 +42,4 @@ const CakebaseInstance = (root) => ({
 
 });
 
-
 module.exports = CakebaseInstance;
