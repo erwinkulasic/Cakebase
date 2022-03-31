@@ -5,6 +5,7 @@
 <br>
 
 <p align="center">
+<h1>Cakebase</h1>
 
 <img alt="TRAVIS" src="https://img.shields.io/travis/erwinkulasic/cakebase?color=9870B8&style=flat-square">
 <img alt="NPM" src="https://img.shields.io/npm/dw/cakebase?color=9870B8&style=flat-square">
@@ -39,7 +40,6 @@ After the installation you can create a json file and start immediately.
 
 Now you can import Cakebase to your project. 
 
-<br>
 
 This is the easiest way to use Cakebase 
 ```javascript
