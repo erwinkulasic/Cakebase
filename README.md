@@ -1,10 +1,11 @@
-<p align="center">
+<div align="center">
     <img src="https://raw.githubusercontent.com/erwinkulasic/Cakebase/master/docs/assets/cakebase-header.jpg" width="800px"/>
-</p>
+</div>
 
 <br>
+<br>
 
-<p align="center">
+<div align="center">
 <h1>Cakebase</h1>
 
 <img alt="TRAVIS" src="https://img.shields.io/travis/erwinkulasic/cakebase?color=9870B8&style=flat-square">
@@ -12,13 +13,14 @@
 <img alt="GitHub issues" src="https://img.shields.io/github/issues/erwinkulasic/cakebase?color=9870B8&style=flat-square">
 <img alt="NPM" src="https://img.shields.io/github/license/erwinkulasic/cakebase?color=9870B8&style=flat-square">
 
-</p>
+</div>
 
 <br>
 
 Cakebase is an asynchronous fast json database that allows you to efficiently and easily edit, search or add objects.
 This project has been optimized and improved with some updates for 2 years now. Cakebase is currently only available in Nodejs.
 
+<br>
 <br>
 
 ### **Getting started**
