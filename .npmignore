@@ -1,8 +1,9 @@
 internal
 node_modules
 .github
-.trvis.yml
+.travis.yml
 CODE_OF_CONDUCT.md
 CONTRIBUTING.md
 docs
 examples
+.travis

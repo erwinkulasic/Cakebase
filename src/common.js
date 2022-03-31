@@ -26,15 +26,15 @@ const CakebaseInstance = (root) => ({
         await write(root, items);
     },
 
-    get: async (predicate) => await processJson(root, async e => await e.filter(predicate)), 
+    get: async (predicate) => await processJson(root, e => e.filter(predicate)),
 
     async update(predicate, data) {
-        const result = await processJson(root, async e => await e.map(i => predicate(i) ? Object.assign(i, data) : i));
+        const result = await processJson(root, e => e.map(i => predicate(i) ? Object.assign(i, data) : i));
         await write(root, result);
     },
 
     async remove(predicate) {
-        const result = await processJson(root, async e => await e.filter(i => !predicate(i)));
+        const result = await processJson(root, e => e.filter(i => !predicate(i)));
         await write(root, result);
     },
 

@@ -21,6 +21,9 @@ Cakebase is an asynchronous fast json database that allows you to efficiently an
 This project has been optimized and improved with some updates for 2 years now. Cakebase is currently only available in Nodejs.
 
 <br>
+
+Here are a few [examples](https://github.com/erwinkulasic/Cakebase/tree/master/examples)
+
 <br>
 
 ### **Getting started**
