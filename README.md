@@ -1,27 +1,22 @@
 <div align="center">
-    <img src="https://raw.githubusercontent.com/erwinkulasic/Cakebase/master/docs/assets/cakebase-header.jpg" width="800px"/>
+    <img src="https://raw.githubusercontent.com/erwinkulasic/Cakebase/master/.github/assets/header.jpg" width="800px"/>
 </div>
 
 <br>
 <br>
 
 <div align="center">
-<h1>Cakebase</h1>
 
-<img alt="TRAVIS" src="https://img.shields.io/travis/erwinkulasic/cakebase?color=9870B8&style=flat-square">
-<img alt="NPM" src="https://img.shields.io/npm/dw/cakebase?color=9870B8&style=flat-square">
-<img alt="GitHub issues" src="https://img.shields.io/github/issues/erwinkulasic/cakebase?color=9870B8&style=flat-square">
-<img alt="NPM" src="https://img.shields.io/github/license/erwinkulasic/cakebase?color=9870B8&style=flat-square">
+<img alt="TRAVIS" src="https://img.shields.io/travis/erwinkulasic/cakebase?color=000&style=flat-square">
+<img alt="NPM" src="https://img.shields.io/npm/dw/cakebase?color=000&style=flat-square">
+<img alt="GitHub issues" src="https://img.shields.io/github/issues/erwinkulasic/cakebase?color=000&style=flat-square">
+<img alt="NPM" src="https://img.shields.io/github/license/erwinkulasic/cakebase?color=000&style=flat-square">
+
+<h4>Cakebase is an asynchronous json database that allows you to efficiently and easily edit, search or add objects.</h4>
 
 </div>
 
 <br>
-
-Cakebase is an asynchronous json database that allows you to efficiently and easily edit, search or add objects.
-
-<br>
-
-Here are a few [examples](https://github.com/erwinkulasic/Cakebase/tree/master/examples)
 
 <br>
 
@@ -42,26 +37,11 @@ After the installation you can create a json file and start immediately.
 
 
 ```javascript
-const table = require('cakebase');
-const users = table("./users.json");
+const users = require('cakebase')('./users.json')
 
-async function createUser(id, username, email) {
-    await users.set({ id, username, email });
-}
-
-async function findUserById(id) {
-    return await users.get(obj => obj.id === id);
-}
-
-async function updateUserByName(name, changes) {
-    await users.update(obj => obj.username === name, changes);
-}
-
-//remove user by location
 users
-    .remove(obj => obj.location === "earth")
-    .then(() => {})
-
+    .get(obj => obj.location === "Mars")
+    .then(console.log)
 
 ```
 
