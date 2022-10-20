@@ -1,5 +1,5 @@
 
-declare interface features {
+declare interface Features {
     /**
     * Insert an object.
     * @param data the object.
@@ -31,6 +31,11 @@ declare interface features {
     clear(): Promise<void>;
 }
 
-declare function cakebase(path: string): features;
+
+/**
+ * Initalize cakebase into your project.
+ * @param path The path to your json file.
+ */
+declare function cakebase(path: string): Features;
 
 export = cakebase;
