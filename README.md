@@ -7,12 +7,11 @@
 
 <div align="center">
 
-<img alt="TRAVIS" src="https://img.shields.io/travis/erwinkulasic/cakebase?color=000&style=flat-square">
-<img alt="NPM" src="https://img.shields.io/npm/dw/cakebase?color=000&style=flat-square">
-<img alt="GitHub issues" src="https://img.shields.io/github/issues/erwinkulasic/cakebase?color=000&style=flat-square">
+<img alt="TRAVIS" src="https://img.shields.io/travis/erwinkulasic/cakebase?&logo=travis&color=df8&&style=flat-square">
+<img alt="NPM" src="https://img.shields.io/npm/dw/cakebase?color=000&logo=npm&style=flat-square">
+<img alt="GitHub issues" src="https://img.shields.io/github/issues/erwinkulasic/cakebase?color=000&logo=github&style=flat-square">
 <img alt="NPM" src="https://img.shields.io/github/license/erwinkulasic/cakebase?color=000&style=flat-square">
 
-<h4>Cakebase is an asynchronous json database that allows you to efficiently and easily edit, search or add objects.</h4>
 
 </div>
 
@@ -20,7 +19,7 @@
 
 <br>
 
-### **Getting started**
+### **Installation**
 
 
 Use [npm](https://www.npmjs.com/) or [yarn](https://classic.yarnpkg.com/en/) to install cakebase.
@@ -29,7 +28,6 @@ Use [npm](https://www.npmjs.com/) or [yarn](https://classic.yarnpkg.com/en/) to 
 npm i cakebase
 ```
 
-After the installation you can create a json file and start immediately.
 
 <br>
 
