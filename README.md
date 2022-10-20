@@ -17,8 +17,7 @@
 
 <br>
 
-Cakebase is an asynchronous fast json database that allows you to efficiently and easily edit, search or add objects.
-This project has been optimized and improved with some updates for 2 years now. Cakebase is currently only available in Nodejs.
+Cakebase is an asynchronous json database that allows you to efficiently and easily edit, search or add objects.
 
 <br>
 
@@ -42,62 +41,28 @@ After the installation you can create a json file and start immediately.
 ### **Usage**
 
 
-
-Now you can import Cakebase to your project. 
-
-
-This is the easiest way to use Cakebase 
-```javascript
-const users = require('cakebase')("./users.json");
-```
-<br>
-
-You can also use Cakebase with multiple json files
-
 ```javascript
 const table = require('cakebase');
-
 const users = table("./users.json");
-const log = table("./log.json");
-```
 
-<br>
+async function createUser(id, username, email) {
+    await users.set({ id, username, email });
+}
 
-add an object to the json file
+async function findUserById(id) {
+    return await users.get(obj => obj.id === id);
+}
 
-```javascript
-await users.set({ id: 0, username: "John", email: "test@something.com" });
-```
+async function updateUserByName(name, changes) {
+    await users.update(obj => obj.username === name, changes);
+}
 
-<br>
+//remove user by location
+users
+    .remove(obj => obj.location === "earth")
+    .then(() => {})
 
-Retrieve for objects in the json file
 
-```javascript
-const user = await users.get(obj => obj.username === "John");
-```
-
-<br>
-
-update objects in the json file
-
-```javascript
-await users.update(obj => obj.username === "John", { location: "Mars" });
-```
-<br>
-
-remove objects in the json file
-
-```javascript
-await users.remove(obj => obj.location === "earth");
-```
-
-<br>
-
-Delete all objects in the json file
-
-```javascript
-await users.clear();
 ```
 
 <br>
