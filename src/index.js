@@ -1,28 +1,25 @@
-const { readFile, writeFile, access } = require('node:fs/promises');
-
+const fs = require('node:fs');
 
 module.exports = function (path) {
-    const write = async function (data) {
-        await writeFile(path, JSON.stringify(data), { encoding: 'utf-8' });
+
+    if (!fs.existsSync(path)) {
+        fs.writeFileSync(path, '[]', { encoding: 'utf-8' });
     }
 
-    const read = async function () {
-        try {
-            //https://github.com/erwinkulasic/Cakebase/issues/5#issuecomment-1285607764
-            await access(path, 0)
-        } catch (error) {
-            await write([])
-        } finally {
-            const data = await readFile(path, { encoding: 'utf-8' });
-            return data.length ? JSON.parse(data) : []
-        }
+    async function write(data) {
+        await fs.promises.writeFile(path, JSON.stringify(data), { encoding: 'utf-8' });
+    }
+
+    async function read() {
+        const data = await fs.promises.readFile(path, { encoding: 'utf-8' });
+        return data.length ? JSON.parse(data) : [];
     }
 
     return {
         async set(data) {
             await write(
-                [...await read(), data]
-            );
+                [...await read(), ...Array.isArray(data) ? data : [data]]
+            )
         },
         async get(predicate) {
             return (await read()).filter(predicate)
