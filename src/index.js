@@ -26,7 +26,7 @@ module.exports = function (path) {
         },
         async update(predicate, data) {
             await write(
-                (await read()).map(object => predicate(object) ? Object.assign(object, data) : object)
+                (await read()).map(object => predicate(object) ? { ...object, ...data } : object)
             )
         },
         async remove(predicate) {
