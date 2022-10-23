@@ -1,6 +1,6 @@
 {
 	"name": "cakebase",
-	"version": "4.1.0",
+	"version": "4.1.1",
 	"description": "Cakebase is an asynchronous json database for nodejs.",
 	"keywords": [
 		"local",
