@@ -1,2 +1,21 @@
 # Usage
 
+After you have successfully installed Cakebase you need to initialize it in your project.
+
+Note: when initializing Cakebase it checks if the JSON file exists, if not it will create one automatically.
+
+
+this is the easiest way to initialize Cakebase using the following example:
+```javascript
+const cakebase = require('cakebase')('./data.json');
+```
+
+It is also possible to initialize multiple files with Cakebase using the following example:
+```javascript
+const cakebase = require('cakebase');
+
+const users = cakebase('./users.json');
+const sessions = cakebase('./sessions.json')
+
+```
+
