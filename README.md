@@ -50,5 +50,10 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 <br>
 
+### **Limits**
+Cakebase should only be used in small projects or test environments it is not performant enough to keep up with a real database.
+
+<br>
+
 ### **License**
 [MIT](https://github.com/erwinkulasic/Cakebase/blob/master/LICENSE)
