@@ -1,13 +1,9 @@
 {
     "name": "Cakebase",
-    "theme": "#000",
+    "theme": "#906BB0",
     "sidebar": [
       ["Overview", "/"],
       ["Installation", "/Installation"],
       ["Usage", "/usage"]
-    ],
-      "docsearch": {
-        "apiKey": "...",
-        "indexName": "..."
-      }
+    ]
   }
