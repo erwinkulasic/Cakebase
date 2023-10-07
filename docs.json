@@ -1,9 +1,0 @@
-{
-    "name": "Cakebase",
-    "theme": "#906BB0",
-    "sidebar": [
-      ["Overview", "/"],
-      ["Installation", "/Installation"],
-      ["Usage", "/usage"]
-    ]
-  }
