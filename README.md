@@ -20,7 +20,7 @@
 ### **Installation**
 
 
-Use [npm](https://www.npmjs.com/) or [yarn](https://classic.yarnpkg.com/en/) to install cakebase.
+Use [npm](https://www.npmjs.com/), [yarn](https://classic.yarnpkg.com/en/) or [pnpm](https://pnpm.io/) to install cakebase.
 
 ```bash
 npm i cakebase
@@ -45,7 +45,7 @@ users
 
 <div align="center">
 
-[![Cakebase Logo](https://raw.githubusercontent.com/erwinkulasic/Cakebase/master/.github/assets/banner.png)](https://cakebase.com/wiki)
+[![Cakebase Logo](https://raw.githubusercontent.com/erwinkulasic/Cakebase/master/.github/assets/banner.png)](https://github.com/erwinkulasic/Cakebase/wiki)
 
 </div>
 
