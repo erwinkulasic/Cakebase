@@ -1,7 +1,6 @@
 const fs = require('node:fs');
 
 module.exports = function (path) {
-
     if (!fs.existsSync(path)) {
         fs.writeFileSync(path, '[]', { encoding: 'utf-8' });
     }
