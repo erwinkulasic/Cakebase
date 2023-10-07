@@ -7,8 +7,8 @@
 
 <div align="center">
 
-<img alt="NPM" src="https://img.shields.io/npm/dm/cakebase?color=8D6BFB&labelColor=8D6BFB&logo=npm&logoColor=white&label=&style=flat-square">
-<img alt="GitHub issues" src="https://img.shields.io/github/issues/erwinkulasic/cakebase?color=8D6BFB&labelColor=8D6BFB&logo=github&label=&style=flat-square">
+<img alt="NPM" src="https://img.shields.io/npm/dm/cakebase?color=8D6BFB&labelColor=8D6BFB&logo=npm&logoColor=white&label=">
+<img alt="GitHub issues" src="https://img.shields.io/github/issues/erwinkulasic/cakebase?color=8D6BFB&labelColor=8D6BFB&logo=github&label=">
 
 
 </div>
@@ -49,7 +49,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 <br>
 
 ### **Limits**
-Cakebase should only be used in small projects or test environments it is not performant enough to keep up with a real database.
+Cakebase should only be used in small projects or test environments, as it is not performant enough to keep up with a real database.
 
 <br>
 
