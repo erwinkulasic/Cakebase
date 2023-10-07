@@ -7,10 +7,8 @@
 
 <div align="center">
 
-<img alt="TRAVIS" src="https://img.shields.io/travis/erwinkulasic/cakebase?&logo=travis&color=df8&&style=flat-square">
-<img alt="NPM" src="https://img.shields.io/npm/dw/cakebase?color=000&logo=npm&style=flat-square">
-<img alt="GitHub issues" src="https://img.shields.io/github/issues/erwinkulasic/cakebase?color=000&logo=github&style=flat-square">
-<img alt="NPM" src="https://img.shields.io/github/license/erwinkulasic/cakebase?color=000&style=flat-square">
+<img alt="NPM" src="https://img.shields.io/npm/dw/cakebase?color=8D6BFB&logo=npm&style=flat-square">
+<img alt="GitHub issues" src="https://img.shields.io/github/issues/erwinkulasic/cakebase?color=8D6BFB&logo=github&style=flat-square">
 
 
 </div>
