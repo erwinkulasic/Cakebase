@@ -1,6 +1,6 @@
 {
 	"name": "cakebase",
-	"version": "4.1.1",
+	"version": "4.1.2",
 	"description": "Cakebase is an asynchronous json database for nodejs.",
 	"keywords": [
 		"local",
@@ -22,7 +22,7 @@
 	"repository": "git://github.com/erwinkulasic/Cakebase.git",
 	"license": "MIT",
 	"engines": {
-		"node": ">=6"
+		"node": ">=14"
 	},
 	"private": false,
 	"types": "./src/index.d.ts",
