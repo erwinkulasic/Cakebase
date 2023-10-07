@@ -43,6 +43,14 @@ users
 
 <br>
 
+<div align="center">
+
+[![Cakebase Logo](https://raw.githubusercontent.com/erwinkulasic/Cakebase/master/.github/assets/banner.png)](https://cakebase.com/wiki)
+
+</div>
+
+<br>
+
 ### **Contributing**
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
