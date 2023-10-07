@@ -7,8 +7,8 @@
 
 <div align="center">
 
-<img alt="NPM" src="https://img.shields.io/npm/dw/cakebase?color=8D6BFB&logo=npm&style=flat-square">
-<img alt="GitHub issues" src="https://img.shields.io/github/issues/erwinkulasic/cakebase?color=8D6BFB&logo=github&style=flat-square">
+<img alt="NPM" src="https://img.shields.io/npm/dm/cakebase?color=8D6BFB&labelColor=8D6BFB&logo=npm&logoColor=white&label=&style=flat-square">
+<img alt="GitHub issues" src="https://img.shields.io/github/issues/erwinkulasic/cakebase?color=8D6BFB&labelColor=8D6BFB&logo=github&label=&style=flat-square">
 
 
 </div>
