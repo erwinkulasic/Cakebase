@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://raw.githubusercontent.com/erwinkulasic/Cakebase/master/.github/assets/header.jpg" width="800px"/>
+    <img src="https://raw.githubusercontent.com/erwinkulasic/Cakebase/master/.github/assets/header.png" width="800px"/>
 </div>
 
 <br>
